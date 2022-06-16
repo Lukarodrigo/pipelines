@@ -24,4 +24,8 @@ jobs:
     - name: list_dir
       run: |
         ls -lah
+    - name: docker build 
+      run: |
+        docker build . -t primeiro-build:v1
+        docker images
         
