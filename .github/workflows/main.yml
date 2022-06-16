@@ -12,7 +12,7 @@ env:
   agent: ubuntu-latest
 jobs:
   get_variables:
-    runs-on: $agent
+    runs-on: ubuntu-latest
     steps:
       - name: "get variables"
         run: |
