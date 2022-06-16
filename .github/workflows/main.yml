@@ -17,3 +17,11 @@ jobs:
       - name: "get variables"
         run: |
           echo "$hoje é $DIA_DA_SEMANA - SO: $agent"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: list_dir
+      run: |
+        ls -lah
+        
